@@ -22,14 +22,8 @@ import { AuthService } from './auth.service';
 import { AuthinterceptorService } from './authinterceptor.service';
 
 /*Material Modules */
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatInputModule } from '@angular/material/input';
-import { MatListModule } from '@angular/material/list';
-import { MatSidenavModule } from '@angular/material/sidenav';
+
 import { HeaderComponent } from './navigation/header/header.component';
-import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { EntryComponent } from './seeu/entry/entry.component';
@@ -57,13 +51,6 @@ import { DashboardComponent } from './seeu/dashboard/dashboard.component';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatCardModule,
-    MatToolbarModule,
-    MatInputModule,
-    MatListModule,
-    MatSidenavModule,
-    MatIconModule,
     FlexLayoutModule
   ],
   providers: [

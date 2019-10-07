@@ -1,11 +1,6 @@
-<mat-toolbar color="primary">
-        <div fxHide.gt-xs>
-            <button mat-icon-button (click)="onToggleSidenav()">
-                <mat-icon>menu</mat-icon>
-            </button>
-        </div>
-        <div  fxFlex fxLayout>
-                <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+
+        <div >
+                <ul>
                         <li>
                             <a routerLink="/">Home</a>       
                         </li>
@@ -14,8 +9,8 @@
                         </li>
                 </ul>
         </div>
-        <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-            <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+        <div >
+            <ul>
                 <li *ngIf="!authService.isAuthenticated">
                     <a routerLink="/register">Register</a>
                 </li>
@@ -33,4 +28,3 @@
                 </li>
             </ul>
         </div>
-</mat-toolbar>

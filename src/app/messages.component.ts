@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'app-messages',
   template: `
             <div *ngFor="let message of apiService.messages">
-              <mat-card>{{message.msg}}</mat-card>
+              <div>{{message.msg}}</div>
             </div>
             `
 })

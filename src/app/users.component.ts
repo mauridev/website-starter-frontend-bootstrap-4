@@ -5,7 +5,7 @@ import { ApiService } from './api.service';
   selector: 'app-users',
   template: `
             <div *ngFor="let user of apiService.users">
-                <mat-card [routerLink]="['/profile', user._id]" style="cursor: pointer">{{user.name}}</mat-card>
+                <div [routerLink]="['/profile', user._id]" style="cursor: pointer">{{user.name}}</div>
             </div>
             `
 })

@@ -5,31 +5,18 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-profile',
   template: `
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title>
-                <h4>Profile</h4>
-            </mat-card-title>
-          </mat-card-header>
-            <mat-card-content>
-                <mat-list role="list">
-                    <mat-list-item role="listitem">Name: {{ profile?.name }}</mat-list-item>
-                    <mat-list-item role="listitem">Email: {{ profile?.email }}</mat-list-item>
-                    <mat-list-item role="listitem">Description: {{ profile?.description }}</mat-list-item>
-                </mat-list>
-          </mat-card-content>
-        </mat-card>
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title>
-                <h4>Messages</h4>
-            </mat-card-title>
-          </mat-card-header>
-            <mat-card-content>
-            <app-messages></app-messages>
-          </mat-card-content>
-        </mat-card>
         
+                <h4>Profile</h4>
+           
+               
+                    Name: {{ profile?.name }}
+                    Email: {{ profile?.email }}
+                    Description: {{ profile?.description }}
+               
+                <h4>Messages</h4>
+            
+            <app-messages></app-messages>
+         
   `
 })
 export class ProfileComponent implements OnInit {
