@@ -1,6 +1,6 @@
 <div>
         <a routerLink="/" (click)="onSidenavClose()">
-             <span class="nav-caption">Home</span>
+            <span class="nav-caption">Home</span>
         </a>
         <a  *ngIf="!authService.isAuthenticated" routerLink="/register"  (click)="onSidenavClose()">
              <span class="nav-caption">Register</span>   

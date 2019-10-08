@@ -21,7 +21,7 @@ import { ApiService } from './api.service';
 import { AuthService } from './auth.service';
 import { AuthinterceptorService } from './authinterceptor.service';
 
-/*Material Modules */
+
 
 import { HeaderComponent } from './navigation/header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
