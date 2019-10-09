@@ -28,6 +28,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { EntryComponent } from './seeu/entry/entry.component';
 import { DashboardComponent } from './seeu/dashboard/dashboard.component';
+import { CoverComponent } from './home/cover/cover.component';
+
 
 
 @NgModule({
@@ -43,7 +45,8 @@ import { DashboardComponent } from './seeu/dashboard/dashboard.component';
     HeaderComponent,
     SidenavListComponent,
     EntryComponent,
-    DashboardComponent
+    DashboardComponent,
+    CoverComponent
   ],
   imports: [
     BrowserModule,
