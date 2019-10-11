@@ -352,3 +352,7 @@ html {
   .ma-overflow-hidden {
     overflow: hidden; }
   
+
+  .btn-margin-left {
+    margin-left: 15px;
+  }

@@ -1,90 +1,47 @@
-<section class="ma-cover">
-  <div class="container">
-    <div class="row ma-vh-75 align-items-center text-left">
-      <div class="col-sm">
-        <div class="ma-text pt-5">
-          <h1 class="ma-heading text-white mb-4">About Us </h1>
-          <div class="ma-subheading mb-5">
-            <p class="h4 font-weight-normal">Free Bootstrap 4 Under Creative Common License by <u>uicookies.com</u></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="ma-section">
   <div class="container">
-    <div class="row">
-      <div class="col-md-7 pr-md-5 pr-0">
-        <h2 class="mb-5">Our Mission</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-
-        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-
-
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-
-        <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-
-        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-      </div>
-      <div class="col-md-5">
-        <h2 class="mb-5">Why Us</h2>
-
-        <div class="media mb-5">
-          <div class="ma-icon"><span class="icon-fingerprint display-4"></span></div>
-          <div class="media-body">
-            <h5 class="mt-0">Free Bootstrap 4</h5>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-
-        <div class="media mb-4">
-          <div class="ma-icon"><span class="icon-users display-4"></span></div>
-          <div class="media-body">
-            <h5 class="mt-0">For The Community</h5>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-
-        <div class="media mb-5">
-          <div class="ma-icon"><span class="icon-chat display-4"></span></div>
-          <div class="media-body">
-            <h5 class="mt-0">Support Us By Sharing This to Others</h5>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-
-      </div>
+    <div class="row justify-content-md-center">
+      <h1 class="ma-heading text-dark mb-4">Register</h1>
     </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-6">
+        <form class="ma-form mb-5">
+          <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="email" [(ngModel)]="registerData.email">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="password" [(ngModel)]="registerData.pwd">
+                </div>
+              </div>   
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="Name">Name</label>
+                  <input type="name" class="form-control" id="name" name="name" placeholder="name" [(ngModel)]="registerData.name">
+                </div>
+              </div>                  
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea cols="30" rows="10" class="form-control" id="description" name="description" [(ngModel)]="registerData.description"></textarea>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+                <button (click)="post()" class="btn btn-primary">Register</button>
+            
+                <button (click)="clear()" class="btn btn-warning btn-margin-left">Clear</button>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+      
+    </div>
+
   </div>
 </section>
-<!-- 
-<div>
-    <div>
-      <div>
-          <h4>Register New User</h4>
-      </div>
-    </div>
-    <div>
-      <form>
-        <div>
-          <input [(ngModel)]="registerData.email" name="email" matInput placeholder="Email" type="email">
-        </div>
-        <div>
-          <input [(ngModel)]="registerData.pwd" name="password" matInput placeholder="Password" type="password">
-        </div>
-        <br>
-        <div>
-            <input [(ngModel)]="registerData.name" name="name" matInput placeholder="Name">
-        </div>
-        <br>
-        <div style="width: 100%">
-            <textarea [(ngModel)]="registerData.description" name="description" matInput placeholder="Description"></textarea>
-        </div>
-        <br>
-        <button (click)="post()" mat-raised-button color="primary">Register</button>
-      </form>
-    </div>
-</div> -->
