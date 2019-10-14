@@ -18,6 +18,7 @@ import { PostComponent } from './post.component';
 
 /*Services */
 import { ApiService } from './api.service';
+import { SeeuService } from './seeu/services/seeu.service';
 import { AuthService } from './auth.service';
 import { AuthinterceptorService } from './authinterceptor.service';
 
@@ -29,6 +30,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { EntryComponent } from './seeu/entry/entry.component';
 import { DashboardComponent } from './seeu/dashboard/dashboard.component';
 import { CoverComponent } from './home/cover/cover.component';
+import { UseComponent } from './seeu/use/use.component';
 
 
 
@@ -46,7 +48,8 @@ import { CoverComponent } from './home/cover/cover.component';
     SidenavListComponent,
     EntryComponent,
     DashboardComponent,
-    CoverComponent
+    CoverComponent,
+    UseComponent
   ],
   imports: [
     BrowserModule,
@@ -59,6 +62,7 @@ import { CoverComponent } from './home/cover/cover.component';
   providers: [
     ApiService,
     AuthService,
+    SeeuService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthinterceptorService,

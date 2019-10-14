@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="ma-nav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a routerLink="/" class="nav-link">Home </a></li>
-        <li class="nav-item" *ngIf="authService.isAuthenticated"><a routerLink="/seeu/dashboard" class="nav-link">SEEU Dashboard</a></li>
+        <li class="nav-item" *ngIf="authService.isAuthenticated"><a routerLink="/seeu" class="nav-link">SEEU Dashboard</a></li>
         <li class="nav-item" *ngIf="authService.isAuthenticated"><a routerLink="/post" class="nav-link">Post</a></li>
         <li class="nav-item" *ngIf="authService.isAuthenticated"><a routerLink="/users" class="nav-link">Users</a></li>
         

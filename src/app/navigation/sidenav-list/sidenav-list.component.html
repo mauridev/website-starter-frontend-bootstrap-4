@@ -1,20 +1,6 @@
-<div>
-        <a routerLink="/" (click)="onSidenavClose()">
-            <span class="nav-caption">Home</span>
-        </a>
-        <a  *ngIf="!authService.isAuthenticated" routerLink="/register"  (click)="onSidenavClose()">
-             <span class="nav-caption">Register</span>   
-        </a>
-        <a *ngIf="!authService.isAuthenticated" routerLink="/login" (click)="onSidenavClose()">
-            <span class="nav-caption">Login</span>
-        </a>
-        <a routerLink="/post" (click)="onSidenavClose()">
-           <span class="nav-caption">Add Post</span>
-        </a>
-        <a routerLink="/users" (click)="onSidenavClose()">
-            <span class="nav-caption">Users</span>
-        </a>
-        <a  *ngIf="authService.isAuthenticated" (click)="authService.logout()" (click)="onSidenavClose()">
-            <span class="nav-caption">Logout</span>
-        </a>
-    </div>
+<button routerLink="/seeu/entry" class="btn btn-primary">
+    Entry
+  </button>
+  <button routerLink="/seeu/use" class="btn btn-primary">
+    Use
+</button>
