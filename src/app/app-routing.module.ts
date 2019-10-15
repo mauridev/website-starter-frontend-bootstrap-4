@@ -12,6 +12,7 @@ import { PostComponent } from './post.component';
 import { DashboardComponent } from './seeu/dashboard/dashboard.component';
 import { EntryComponent } from './seeu/entry/entry.component';
 import { UseComponent } from './seeu/use/use.component';
+import { AddComponent } from './seeu/entry/add/add.component';
 
 
 const routes: Routes = [
@@ -26,7 +27,8 @@ const routes: Routes = [
     component: DashboardComponent,
     children: [
       { path: 'entry', component: EntryComponent },
-      { path: 'use', component: UseComponent}
+      { path: 'use', component: UseComponent},
+      { path: 'entry/add', component: AddComponent}
     ]
 
   }

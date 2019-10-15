@@ -31,6 +31,7 @@ import { EntryComponent } from './seeu/entry/entry.component';
 import { DashboardComponent } from './seeu/dashboard/dashboard.component';
 import { CoverComponent } from './home/cover/cover.component';
 import { UseComponent } from './seeu/use/use.component';
+import { AddComponent } from './seeu/entry/add/add.component';
 
 
 
@@ -49,7 +50,8 @@ import { UseComponent } from './seeu/use/use.component';
     EntryComponent,
     DashboardComponent,
     CoverComponent,
-    UseComponent
+    UseComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,

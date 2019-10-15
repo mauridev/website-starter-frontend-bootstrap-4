@@ -1,15 +1,23 @@
 <p>Entries</p>
+<button type="button" class="btn btn-success" routerLink="/seeu/entry/add">Add new +</button>
 <table class="table table-striped">
     <thead>
         <tr>
             <th scope="col">#</th>
             <th scope="col">Term</th>
+            <th scope="col">Actions</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <th>Formualtion</th>
+        <tr *ngFor="let entry of seeuService.entries">
+            <th scope="row">{{ entry._id }}</th>
+            <th>{{ entry.term }}</th>
+            <th>
+                <div class="btn-group" role="group" aria-label="actions">
+                    <button type="button" class="btn btn-primary">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </th>
         </tr>
     </tbody>
 </table>

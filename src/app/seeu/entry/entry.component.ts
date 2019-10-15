@@ -12,8 +12,7 @@ export class EntryComponent implements OnInit {
   constructor(public seeuService: SeeuService) { }
 
   ngOnInit() {
-    let a = this.seeuService.getTerms();
-    console.log(a);
+     this.seeuService.getTerms();
   }
 
 }
