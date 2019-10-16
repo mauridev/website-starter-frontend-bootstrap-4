@@ -10,30 +10,10 @@
 
     <div class="jumbotron">
         <div class="form-group">
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Debe venir por la BD</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="Chemistry" value="Chemistry">
-                <label class="form-check-label" for="Chemistry">Chemistry</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="Physics" value="Physics" disabled>
-                <label class="form-check-label" for="Physics">Physics</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="Biology" value="Biology" disabled>
-                <label class="form-check-label" for="Biology">Biology</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="Pharmacy" value="Pharmacy">
-                <label class="form-check-label" for="Pharmacy">Pharmacy</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="Materials" value="Materials">
-                <label class="form-check-label" for="Materials">Materials</label>
-            </div>
+            <div *ngFor="let discipline of seeuService.disciplinesOfUse" class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="{{ discipline._id }}" value="{{ discipline.name }}">
+                <label class="form-check-label" for="{{ discipline._id }}">{{ discipline.name }}</label>
+            </div>            
     </div>
     </div>
     

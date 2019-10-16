@@ -14,6 +14,7 @@ export class AddComponent implements OnInit {
 
   ngOnInit() {
     this.seeuService.getUses();
+    this.seeuService.getDisiciplinesOfUse();
   }
 
 }

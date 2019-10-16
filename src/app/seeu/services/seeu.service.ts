@@ -8,6 +8,7 @@ export class SeeuService {
     path = environment.path + '/seeu';
     public entries;
     public uses;
+    public disciplinesOfUse;
 
     constructor( public httpClient: HttpClient) {}
 
@@ -20,6 +21,12 @@ export class SeeuService {
     getUses() {
         this.httpClient.get<any>(this.path + '/uses').subscribe(res => {
             this.uses = res;
+        });
+    }
+
+    getDisiciplinesOfUse() {
+        this.httpClient.get<any>(this.path + '/disciplines').subscribe(res => {
+            this.disciplinesOfUse = res;
         });
     }
 }
