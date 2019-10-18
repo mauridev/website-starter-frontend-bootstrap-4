@@ -8,14 +8,24 @@ import { AuthService } from './auth.service';
 export class RegisterComponent {
   constructor( public authService: AuthService) {}
   registerData = {
-    email:'',
+    email: '',
     pwd: '',
     name: '',
     description: ''
   };
- 
+
   post() {
     console.log(this.registerData);
     this.authService.registerUser(this.registerData);
+  }
+
+  clear() {
+    this.registerData = {
+      email: '',
+      pwd: '',
+      name: '',
+      description: ''
+    }
+
   }
 }

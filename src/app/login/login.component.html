@@ -1,12 +1,38 @@
-
-          <h4>Login</h4>
-     
-      <form>
-       
-          <input [(ngModel)]="loginData.email" name="email" matInput placeholder="Email" type="email">
-        
-          <input [(ngModel)]="loginData.pwd" name="password" matInput placeholder="Password" type="password">
-        
-        <button (click)="post()" mat-raised-button color="primary">Login</button>
-      </form>
+<section class="ma-section">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <h1 class="ma-heading text-dark mb-4">Login</h1>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-6">
+              <form class="ma-form mb-5">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="email" [(ngModel)]="loginData.email">
+                    </div>
+                  </div>                  
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="password" [(ngModel)]="loginData.pwd">
+                      </div>
+                    </div>                  
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                      <button (click)="post()" class="btn btn-primary">Login</button>
+                  </div>
+                </div>
+                
+              </form>
+            </div>
+            
+          </div>
+  
+        </div>
+      </section>
   

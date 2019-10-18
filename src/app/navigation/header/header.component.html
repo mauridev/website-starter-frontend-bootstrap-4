@@ -1,31 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ma-navabr-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">mauri.software</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ma-nav" aria-controls="ma-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div >
-                <ul>
-                        <li>
-                            <a routerLink="/">Home</a> 
-                                  
-                        </li>
-                        <li>
-                            <a routerLink="/seeu/dashboard">Seeu Dashboard</a>       
-                        </li>
-                </ul>
-        </div>
-        <div >
-            <ul>
-                <li *ngIf="!authService.isAuthenticated">
-                    <a routerLink="/register">Register</a>
-                </li>
-                <li *ngIf="!authService.isAuthenticated">
-                    <a routerLink="/login">Login</a>
-                </li>
-                <li>
-                        <a routerLink="/post">Post</a>
-                </li>
-                <li>
-                        <a routerLink="/users">Users</a>
-                </li>
-                <li *ngIf="authService.isAuthenticated" (click)="authService.logout()">
-                        <a>Logout</a>
-                </li>
-            </ul>
-        </div>
+    <div class="collapse navbar-collapse" id="ma-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a routerLink="/" class="nav-link">Home </a></li>
+        <li class="nav-item" *ngIf="authService.isAuthenticated"><a routerLink="/seeu" class="nav-link">SEEU Dashboard</a></li>
+        <li class="nav-item" *ngIf="authService.isAuthenticated"><a routerLink="/post" class="nav-link">Post</a></li>
+        <li class="nav-item" *ngIf="authService.isAuthenticated"><a routerLink="/users" class="nav-link">Users</a></li>
+        
+
+        <li class="nav-item" *ngIf="authService.isAuthenticated"><a class="nav-link"  routerLink="/register">Register</a></li>
+        <li class="nav-item" *ngIf="!authService.isAuthenticated"><a class="nav-link"  routerLink="/login">Login</a></li>
+        <li class="nav-item" *ngIf="authService.isAuthenticated" (click)="authService.logout()"><a class="nav-link" >Logout</a></li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>

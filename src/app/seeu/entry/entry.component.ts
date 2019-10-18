@@ -1,4 +1,6 @@
+import { SeeuService } from './../services/seeu.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-entry',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntryComponent implements OnInit {
 
-  constructor() { }
+  constructor(public seeuService: SeeuService) { }
 
   ngOnInit() {
+     this.seeuService.getTerms();
   }
 
 }
