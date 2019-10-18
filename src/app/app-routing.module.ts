@@ -8,11 +8,6 @@ import { ProfileComponent } from './profile.component';
 import { PostComponent } from './post.component';
 
 
-/*SEEU COMPONENTS */
-import { DashboardComponent } from './seeu/dashboard/dashboard.component';
-import { EntryComponent } from './seeu/entry/entry.component';
-import { UseComponent } from './seeu/use/use.component';
-import { AddComponent } from './seeu/entry/add/add.component';
 
 
 const routes: Routes = [
@@ -22,16 +17,7 @@ const routes: Routes = [
   { path: 'users', component: UsersComponent },
   { path: 'profile/:id', component: ProfileComponent },
   { path: 'post', component: PostComponent },
-  {
-    path: 'seeu',
-    component: DashboardComponent,
-    children: [
-      { path: 'entry', component: EntryComponent },
-      { path: 'use', component: UseComponent},
-      { path: 'entry/add', component: AddComponent}
-    ]
-
-  }
+ 
 ];
 
 @NgModule({

@@ -18,7 +18,7 @@ import { PostComponent } from './post.component';
 
 /*Services */
 import { ApiService } from './api.service';
-import { SeeuService } from './seeu/services/seeu.service';
+
 import { AuthService } from './auth.service';
 import { AuthinterceptorService } from './authinterceptor.service';
 
@@ -27,11 +27,7 @@ import { AuthinterceptorService } from './authinterceptor.service';
 import { HeaderComponent } from './navigation/header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
-import { EntryComponent } from './seeu/entry/entry.component';
-import { DashboardComponent } from './seeu/dashboard/dashboard.component';
 import { CoverComponent } from './home/cover/cover.component';
-import { UseComponent } from './seeu/use/use.component';
-import { AddComponent } from './seeu/entry/add/add.component';
 
 
 
@@ -46,12 +42,9 @@ import { AddComponent } from './seeu/entry/add/add.component';
     PostComponent,
     HomeComponent,
     HeaderComponent,
-    SidenavListComponent,
-    EntryComponent,
-    DashboardComponent,
+    SidenavListComponent,   
     CoverComponent,
-    UseComponent,
-    AddComponent
+   
   ],
   imports: [
     BrowserModule,
@@ -64,7 +57,6 @@ import { AddComponent } from './seeu/entry/add/add.component';
   providers: [
     ApiService,
     AuthService,
-    SeeuService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthinterceptorService,
